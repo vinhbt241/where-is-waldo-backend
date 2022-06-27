@@ -1,0 +1,3 @@
+class PlayerRecord < ApplicationRecord
+  belongs_to :image_info
+end
