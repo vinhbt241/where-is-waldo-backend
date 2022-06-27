@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_26_045221) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_27_095120) do
   create_table "characters", force: :cascade do |t|
     t.string "name"
     t.integer "row"
@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_26_045221) do
     t.integer "image_info_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "url"
     t.index ["image_info_id"], name: "index_characters_on_image_info_id"
   end
 
@@ -27,6 +28,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_26_045221) do
     t.integer "num_col"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
   end
 
 end
