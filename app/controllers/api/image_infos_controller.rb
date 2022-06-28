@@ -16,4 +16,10 @@ class Api::ImageInfosController < ApplicationController
 
     render json: @characters
   end
+
+  def player_records 
+    @player_records = ImageInfo.find(params[:id]).player_records 
+
+    render json: @player_records
+  end
 end
